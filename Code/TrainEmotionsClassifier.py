@@ -27,7 +27,7 @@ def getCallbacks(patience):
     base_path = '../TrainedModels/Emotions/'
     dataset_name = 'fer2013'
     log_file_path = base_path + dataset_name + '_emotion_training.log'
-    trained_models_path = base_path + dataset_name + '_mini_XCEPTION'
+    trained_models_path = base_path + dataset_name 
     model_names = trained_models_path + '.{epoch:02d}-{val_acc:.2f}.hdf5'
     
     #Callback that streams epoch results to a csv file.
